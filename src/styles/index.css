@@ -1,0 +1,104 @@
+:root {
+  --dark-orange: #d87d4a;
+  --light-orange: #fbaf85;
+  --dark-blue: #191919;
+  --dark-gray: #f1f1f1;
+  --light-gray: #f2f2f2;
+  --font-manrope: "Manrope", sans-serif;
+  --tablet-min-width: 481px;
+  --laptop-min-width: 1025px;
+}
+
+* {
+  font-family: var(--font-manrope);
+}
+
+h1 {
+  font-family: var(--font-manrope);
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 58px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: black;
+}
+
+h2 {
+  font-family: var(--font-manrope);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 44px;
+  letter-spacing: 1.43px;
+  text-transform: uppercase;
+  color: black;
+}
+
+h3 {
+  font-family: var(--font-manrope);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: 1.14px;
+  text-transform: uppercase;
+  color: black;
+}
+
+h4 {
+  font-family: var(--font-manrope);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: black;
+}
+
+h5 {
+  font-family: var(--font-manrope);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: 1.7px;
+  text-transform: uppercase;
+  color: black;
+}
+
+h6 {
+  font-family: var(--font-manrope);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+  color: black;
+}
+
+.overline {
+  font-family: var(--font-manrope);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  color: var(--dark-orange);
+}
+
+.sub-title {
+  font-family: var(--font-manrope);
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 25px;
+  letter-spacing: 0.93px;
+  text-transform: uppercase;
+  color: var(--dark-orange);
+}
+
+.text-body {
+  font-family: var(--font-manrope);
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 0.93px;
+  text-transform: uppercase;
+  color: black;
+}

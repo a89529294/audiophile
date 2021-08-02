@@ -1,0 +1,4 @@
+.hi {
+  width: var(--test);
+  height: var(--test);
+}

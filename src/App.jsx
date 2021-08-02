@@ -1,0 +1,24 @@
+import React from "react";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+
+import classes from "./styles/App.module.css";
+
+import Home from "./components/pages/Home.jsx";
+import Header from "./components/ui/Header";
+
+function App() {
+  return (
+    <div>
+      <BrowserRouter>
+        <Header />
+        <Switch>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </BrowserRouter>
+    </div>
+  );
+}
+
+export default App;

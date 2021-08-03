@@ -2,7 +2,7 @@ import React from "react";
 
 import classes from "../../styles/Header.module.css";
 
-import logo from "../../assets/header/logo.svg";
+import logo from "../../assets/home/logo.svg";
 import hamburger from "../../assets/header/icon-hamburger.svg";
 import cart from "../../assets/header/icon-cart.svg";
 

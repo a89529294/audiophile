@@ -1,0 +1,48 @@
+.root {
+  width: 100%;
+  background-color: var(--dark-blue);
+  padding-top: 52px;
+  padding-bottom: 38px;
+  padding-left: 24px;
+  padding-right: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.root > * {
+  margin-top: 48px;
+}
+
+.root > *:first-child {
+  margin-top: 0px;
+}
+
+.tabs {
+}
+
+.tabs > * {
+  margin-top: 16px;
+}
+
+.tabs > *:first-child {
+  margin-top: 0px;
+}
+
+.tab {
+  composes: sub-title from "./index.css";
+  color: white;
+  text-align: center;
+}
+
+.body {
+  color: white;
+  opacity: 0.5;
+  text-align: center;
+}
+
+.social-media {
+  display: flex;
+  width: 104px;
+  justify-content: space-between;
+}

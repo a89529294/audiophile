@@ -1,13 +1,30 @@
-.default {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 160px;
-  height: 48px;
+.btn-orange {
+  composes: btn from "./index.css";
   background-color: var(--dark-orange);
-  font-size: 13px;
-  line-height: 18px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
   color: white;
+}
+
+.btn-black {
+  composes: btn from "./index.css";
+  background-color: black;
+  color: white;
+}
+
+.btn-white {
+  composes: btn from "./index.css";
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+}
+
+.btn-outline-less {
+  composes: btn from "./index.css";
+  width: 60px;
+  height: 18px;
+  justify-content: space-between;
+  color: black;
+}
+
+.btn-outline-less > .text {
+  opacity: 0.5;
 }

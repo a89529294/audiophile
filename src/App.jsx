@@ -5,6 +5,7 @@ import classes from "./styles/App.module.css";
 
 import Home from "./components/pages/Home.jsx";
 import Header from "./components/ui/Header";
+import Footer from "./components/ui/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <Home />
           </Route>
         </Switch>
+        <Footer />
       </BrowserRouter>
     </div>
   );

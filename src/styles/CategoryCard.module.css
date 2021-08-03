@@ -1,0 +1,37 @@
+.card {
+  height: 165px;
+  background-color: var(--dark-gray);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 68px;
+  border-radius: 8px;
+}
+
+.card-img {
+  height: 104px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+
+.card-img-blur {
+  width: 95px;
+  height: 14px;
+  border-radius: 48px/7px;
+  background-color: black;
+  margin-top: 42px;
+  filter: blur(13px);
+}
+
+.card-title {
+  font-family: var(--font-manrope);
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 1.07px;
+  color: black;
+  margin-bottom: 17px;
+  margin-top: 32px;
+}

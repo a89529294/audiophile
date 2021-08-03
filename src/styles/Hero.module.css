@@ -24,11 +24,7 @@
 }
 
 .hero-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 40px;
-  letter-spacing: 1.3px;
-  text-transform: uppercase;
+  composes: mobile-title from "./index.css";
   color: white;
   text-align: center;
   margin-bottom: 24px;

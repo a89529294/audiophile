@@ -14,7 +14,7 @@ function Hero() {
           Experience natural, lifelike audio and exceptional build quality made
           for the passionate music enthusiast.
         </p>
-        <Button>SEE PRODUCT</Button>
+        <Button text="SEE PRODUCTS" variant="orange" />
       </div>
     </div>
   );

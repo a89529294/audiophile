@@ -4,6 +4,7 @@
   align-items: center;
   background-color: var(--dark-blue);
   padding: 32px 24px;
+  border-bottom: 1px solid rgba(172, 167, 167, 0.3);
 }
 
 .hamburger {

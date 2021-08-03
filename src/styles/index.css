@@ -1,9 +1,9 @@
 :root {
   --dark-orange: #d87d4a;
   --light-orange: #fbaf85;
-  --dark-blue: #191919;
+  --dark-blue: #101010;
   --dark-gray: #f1f1f1;
-  --light-gray: #f2f2f2;
+  --light-gray: #fafafa;
   --font-manrope: "Manrope", sans-serif;
   --tablet-min-width: 481px;
   --laptop-min-width: 1025px;
@@ -20,7 +20,6 @@ h1 {
   line-height: 58px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: black;
 }
 
 h2 {
@@ -30,7 +29,6 @@ h2 {
   line-height: 44px;
   letter-spacing: 1.43px;
   text-transform: uppercase;
-  color: black;
 }
 
 h3 {
@@ -40,7 +38,6 @@ h3 {
   line-height: 36px;
   letter-spacing: 1.14px;
   text-transform: uppercase;
-  color: black;
 }
 
 h4 {
@@ -50,7 +47,6 @@ h4 {
   line-height: 38px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: black;
 }
 
 h5 {
@@ -60,7 +56,6 @@ h5 {
   line-height: 33px;
   letter-spacing: 1.7px;
   text-transform: uppercase;
-  color: black;
 }
 
 h6 {
@@ -70,7 +65,15 @@ h6 {
   line-height: 25px;
   letter-spacing: 1.3px;
   text-transform: uppercase;
-  color: black;
+}
+
+.mobile-title {
+  font-family: var(--font-manrope);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
 }
 
 .overline {
@@ -80,7 +83,6 @@ h6 {
   line-height: 19px;
   letter-spacing: 10px;
   text-transform: uppercase;
-  color: var(--dark-orange);
 }
 
 .sub-title {
@@ -90,7 +92,6 @@ h6 {
   line-height: 25px;
   letter-spacing: 0.93px;
   text-transform: uppercase;
-  color: var(--dark-orange);
 }
 
 .text-body {
@@ -100,5 +101,17 @@ h6 {
   line-height: 25px;
   letter-spacing: 0.93px;
   text-transform: uppercase;
-  color: black;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  height: 48px;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }

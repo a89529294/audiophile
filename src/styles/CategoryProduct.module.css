@@ -1,0 +1,36 @@
+.description-card {
+  padding-top: 32px;
+  padding-bottom: 0px;
+}
+
+.description-card > * {
+  margin-top: 24px;
+}
+
+.description-card > *:first-child {
+  margin-top: 0px;
+}
+
+.img {
+  width: 100%;
+  height: 352px;
+  object-fit: cover;
+}
+
+.overline {
+  composes: overline from "./index.css";
+  color: var(--dark-orange);
+  text-align: center;
+}
+
+.title {
+  color: black;
+  text-align: center;
+}
+
+.body {
+  composes: text-body from "./index.css";
+  color: black;
+  opacity: 0.5;
+  text-align: center;
+}

@@ -8,5 +8,6 @@ export default defineConfig({
     fs: {
       allow: ["."],
     },
+    host: "0.0.0.0",
   },
 });

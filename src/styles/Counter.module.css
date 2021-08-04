@@ -1,0 +1,9 @@
+.root {
+  composes: btn-text from "./index.css";
+  width: 120px;
+  height: 48px;
+  background-color: var(--dark-gray);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

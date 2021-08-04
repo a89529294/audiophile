@@ -6,7 +6,7 @@
   --light-gray: #fafafa;
   --font-manrope: "Manrope", sans-serif;
   --tablet-min-width: 481px;
-  --laptop-min-width: 1025px;
+  --laptop-min-width: 1224px;
 }
 
 * {
@@ -103,15 +103,18 @@ h6 {
   text-transform: uppercase;
 }
 
+.btn-text {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
 .btn {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 160px;
   height: 48px;
-  font-weight: 700;
-  font-size: 13px;
-  line-height: 18px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
 }

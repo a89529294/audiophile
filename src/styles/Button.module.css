@@ -1,17 +1,20 @@
 .btn-orange {
   composes: btn from "./index.css";
+  composes: btn-text from "./index.css";
   background-color: var(--dark-orange);
   color: white;
 }
 
 .btn-black {
   composes: btn from "./index.css";
+  composes: btn-text from "./index.css";
   background-color: black;
   color: white;
 }
 
 .btn-white {
   composes: btn from "./index.css";
+  composes: btn-text from "./index.css";
   background-color: white;
   border: 1px solid black;
   color: black;
@@ -19,6 +22,7 @@
 
 .btn-outline-less {
   composes: btn from "./index.css";
+  composes: btn-text from "./index.css";
   width: 60px;
   height: 18px;
   justify-content: space-between;

@@ -1,5 +1,4 @@
 import React from "react";
-import { useRouteMatch } from "react-router";
 
 import classes from "../../styles/CategoryProduct.module.css";
 
@@ -13,7 +12,6 @@ function CategoryProduct({
   id,
   newProduct = false,
 }) {
-  let { url } = useRouteMatch();
   return (
     <div>
       <img src={imgStr} className={classes.img} />
@@ -22,14 +20,14 @@ function CategoryProduct({
         <h4 className={classes.title}>{name}</h4>
         <p className={classes.body}>{desc}</p>
         <MyLink
-          to={`${url}/${id}`}
+          to={`products/${id}`}
           style={{
             marginLeft: "auto",
             marginRight: "auto",
             width: "fit-content",
           }}
         >
-          <Button variant="orange" text="SEE PRODUCTS" />
+          <Button variant="orange" text="SEE PRODUCT" />
         </MyLink>
       </div>
     </div>

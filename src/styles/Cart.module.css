@@ -1,0 +1,88 @@
+.bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-top: 114px;
+  z-index: 1;
+}
+
+.cart {
+  padding: 32px 28px;
+  background-color: white;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.remove-btn {
+  composes: text-body from "./index.css";
+  color: black;
+  opacity: 0.5;
+}
+
+.body > * {
+  margin-top: 24px;
+}
+
+.body > *:first-child {
+  margin-top: 0px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+}
+
+.item-img {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.item-center-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-grow: 1;
+  padding-left: 16px;
+}
+
+.item-name {
+  composes: text-body from "./index.css";
+  font-weight: 700 !important;
+  letter-spacing: -1px !important;
+  color: black;
+}
+
+.item-price {
+  composes: text-body from "./index.css";
+  color: black;
+  opacity: 0.5;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+
+.total-tag {
+  composes: text-body from "./index.css";
+  color: black;
+  opacity: 0.5;
+}
+
+.total-price {
+  composes: text-body from "./index.css";
+  color: black;
+  font-weight: 700 !important;
+}

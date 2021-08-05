@@ -3,6 +3,7 @@
     "id": 1,
     "slug": "yx1-earphones",
     "name": "YX1 Wireless Earphones",
+    "cartName": "YX1",
     "image": {
       "mobile": "/src/assets/product-yx1-earphones/mobile/image-product.jpg",
       "tablet": "/src/assets/product-yx1-earphones/tablet/image-product.jpg",
@@ -54,7 +55,7 @@
     },
     "others": [
       {
-        "slug": "xx99-mark-one-headphones",
+        "id": 3,
         "name": "XX99 Mark I",
         "image": {
           "mobile": "/src/assets/shared/mobile/image-xx99-mark-one-headphones.jpg",
@@ -63,7 +64,7 @@
         }
       },
       {
-        "slug": "xx59-headphones",
+        "id": 2,
         "name": "XX59",
         "image": {
           "mobile": "/src/assets/shared/mobile/image-xx59-headphones.jpg",
@@ -72,7 +73,7 @@
         }
       },
       {
-        "slug": "zx9-speaker",
+        "id": 6,
         "name": "ZX9 Speaker",
         "image": {
           "mobile": "/src/assets/shared/mobile/image-zx9-speaker.jpg",
@@ -86,6 +87,7 @@
     "id": 2,
     "slug": "xx59-headphones",
     "name": "XX59 Headphones",
+    "cartName": "XX59",
     "image": {
       "mobile": "/src/assets/product-xx59-headphones/mobile/image-product.jpg",
       "tablet": "/src/assets/product-xx59-headphones/tablet/image-product.jpg",
@@ -133,7 +135,7 @@
     },
     "others": [
       {
-        "slug": "xx99-mark-two-headphones",
+        "id": 4,
         "name": "XX99 Mark II",
         "image": {
           "mobile": "/src/assets/shared/mobile/image-xx99-mark-two-headphones.jpg",
@@ -142,7 +144,7 @@
         }
       },
       {
-        "slug": "xx99-mark-one-headphones",
+        "id": 3,
         "name": "XX99 Mark I",
         "image": {
           "mobile": "/src/assets/shared/mobile/image-xx99-mark-one-headphones.jpg",
@@ -151,7 +153,7 @@
         }
       },
       {
-        "slug": "zx9-speaker",
+        "id": 6,
         "name": "ZX9 Speaker",
         "image": {
           "mobile": "/src/assets/shared/mobile/image-zx9-speaker.jpg",
@@ -165,6 +167,7 @@
     "id": 3,
     "slug": "xx99-mark-one-headphones",
     "name": "XX99 Mark I Headphones",
+    "cartName": "XX99 MK I",
     "image": {
       "mobile": "/src/assets/product-xx99-mark-one-headphones/mobile/image-product.jpg",
       "tablet": "/src/assets/product-xx99-mark-one-headphones/tablet/image-product.jpg",
@@ -212,7 +215,7 @@
     },
     "others": [
       {
-        "slug": "xx99-mark-two-headphones",
+        "id": 4,
         "name": "XX99 Mark II",
         "image": {
           "mobile": "/src/assets/shared/mobile/image-xx99-mark-two-headphones.jpg",
@@ -221,7 +224,7 @@
         }
       },
       {
-        "slug": "xx59-headphones",
+        "id": 2,
         "name": "XX59",
         "image": {
           "mobile": "/src/assets/shared/mobile/image-xx59-headphones.jpg",
@@ -230,7 +233,7 @@
         }
       },
       {
-        "slug": "zx9-speaker",
+        "id": 6,
         "name": "ZX9 Speaker",
         "image": {
           "mobile": "/src/assets/shared/mobile/image-zx9-speaker.jpg",
@@ -244,6 +247,7 @@
     "id": 4,
     "slug": "xx99-mark-two-headphones",
     "name": "XX99 Mark II Headphones",
+    "cartName": "XX99 MK II",
     "image": {
       "mobile": "/src/assets/product-xx99-mark-two-headphones/mobile/image-product.jpg",
       "tablet": "/src/assets/product-xx99-mark-two-headphones/tablet/image-product.jpg",
@@ -295,7 +299,7 @@
     },
     "others": [
       {
-        "slug": "xx99-mark-one-headphones",
+        "id": 3,
         "name": "XX99 Mark I",
         "image": {
           "mobile": "/src/assets/shared/mobile/image-xx99-mark-one-headphones.jpg",
@@ -304,7 +308,7 @@
         }
       },
       {
-        "slug": "xx59-headphones",
+        "id": 2,
         "name": "XX59",
         "image": {
           "mobile": "/src/assets/shared/mobile/image-xx59-headphones.jpg",
@@ -313,7 +317,7 @@
         }
       },
       {
-        "slug": "zx9-speaker",
+        "id": 6,
         "name": "ZX9 Speaker",
         "image": {
           "mobile": "/src/assets/shared/mobile/image-zx9-speaker.jpg",
@@ -327,6 +331,7 @@
     "id": 5,
     "slug": "zx7-speaker",
     "name": "ZX7 Speaker",
+    "cartName": "ZX7",
     "image": {
       "mobile": "/src/assets/product-zx7-speaker/mobile/image-product.jpg",
       "tablet": "/src/assets/product-zx7-speaker/tablet/image-product.jpg",
@@ -378,7 +383,7 @@
     },
     "others": [
       {
-        "slug": "zx9-speaker",
+        "id": 6,
         "name": "ZX9 Speaker",
         "image": {
           "mobile": "/src/assets/shared/mobile/image-zx9-speaker.jpg",
@@ -387,7 +392,7 @@
         }
       },
       {
-        "slug": "xx99-mark-one-headphones",
+        "id": 3,
         "name": "XX99 Mark I",
         "image": {
           "mobile": "/src/assets/shared/mobile/image-xx99-mark-one-headphones.jpg",
@@ -396,7 +401,7 @@
         }
       },
       {
-        "slug": "xx59-headphones",
+        "id": 2,
         "name": "XX59",
         "image": {
           "mobile": "/src/assets/shared/mobile/image-xx59-headphones.jpg",
@@ -410,6 +415,7 @@
     "id": 6,
     "slug": "zx9-speaker",
     "name": "ZX9 Speaker",
+    "cartName": "ZX9",
     "image": {
       "mobile": "/src/assets/product-zx9-speaker/mobile/image-product.jpg",
       "tablet": "/src/assets/product-zx9-speaker/tablet/image-product.jpg",
@@ -461,7 +467,7 @@
     },
     "others": [
       {
-        "slug": "zx7-speaker",
+        "id": 5,
         "name": "ZX7 Speaker",
         "image": {
           "mobile": "/src/assets/shared/mobile/image-zx7-speaker.jpg",
@@ -470,7 +476,7 @@
         }
       },
       {
-        "slug": "xx99-mark-one-headphones",
+        "id": 3,
         "name": "XX99 Mark I",
         "image": {
           "mobile": "/src/assets/shared/mobile/image-xx99-mark-one-headphones.jpg",
@@ -479,7 +485,7 @@
         }
       },
       {
-        "slug": "xx59-headphones",
+        "id": 2,
         "name": "XX59",
         "image": {
           "mobile": "/src/assets/shared/mobile/image-xx59-headphones.jpg",

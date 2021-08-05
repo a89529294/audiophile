@@ -13,6 +13,14 @@
   font-family: var(--font-manrope);
 }
 
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 h1 {
   font-family: var(--font-manrope);
   font-weight: 700;
@@ -94,13 +102,20 @@ h6 {
   text-transform: uppercase;
 }
 
+.product-detail-section-title {
+  font-family: var(--font-manrope);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.86px;
+}
+
 .text-body {
   font-family: var(--font-manrope);
   font-weight: 200;
   font-size: 15px;
   line-height: 25px;
   letter-spacing: 0.93px;
-  text-transform: uppercase;
 }
 
 .btn-text {

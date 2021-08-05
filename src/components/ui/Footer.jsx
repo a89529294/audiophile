@@ -7,15 +7,25 @@ import twitter from "../../assets/home/icon-twitter.svg";
 
 import classes from "../../styles/Footer.module.css";
 
+import MyLink from "../ui/MyLink";
+
 function Footer() {
   return (
     <div className={classes.root}>
       <img src={logo} />
       <div className={classes.tabs}>
-        <div className={classes.tab}>HOME</div>
-        <div className={classes.tab}>HEADPHONES</div>
-        <div className={classes.tab}>SPEAKERS</div>
-        <div className={classes.tab}>EARPHONES</div>
+        <MyLink to="/" className={classes.tab}>
+          HOME
+        </MyLink>
+        <MyLink to="/headphones" className={classes.tab}>
+          HEADPHONES
+        </MyLink>
+        <MyLink to="/speakers" className={classes.tab}>
+          SPEAKERS
+        </MyLink>
+        <MyLink to="/earphones" className={classes.tab}>
+          EARPHONES
+        </MyLink>
       </div>
       <div className={classes.body}>
         Audiophile is an all in one stop to fulfill your audio needs. We're a

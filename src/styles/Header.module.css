@@ -5,6 +5,11 @@
   background-color: var(--dark-blue);
   padding: 32px 24px;
   border-bottom: 1px solid rgba(172, 167, 167, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
 }
 
 .hamburger {
@@ -15,4 +20,24 @@
 .cart {
   width: 23px;
   height: 16px;
+}
+
+.cart-container {
+  position: relative;
+}
+
+.cart-container::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: attr(data-content);
+  width: var(--width);
+  height: 15px;
+  background-color: var(--dark-orange);
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

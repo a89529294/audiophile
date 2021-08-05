@@ -4,9 +4,9 @@ import classes from "../../styles/Ad.module.css";
 
 import bestGear from "../../assets/home/image-best-gear-mobile.jpg";
 
-function Ad() {
+function Ad({ style }) {
   return (
-    <div>
+    <div style={style}>
       <img src={bestGear} className={classes["best-gear"]} />
       <h4 className={classes.title}>
         Bringing you the <span>best</span> audio gear

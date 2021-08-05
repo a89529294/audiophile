@@ -9,9 +9,9 @@ import headphoneLogo from "../../assets/home/category-logo-headphone.svg";
 import speakerLogo from "../../assets//home/category-logo-speaker.svg";
 import earphoneLogo from "../../assets/home/category-logo-earphone.svg";
 
-function CategoryLink() {
+function CategoryLink({ style }) {
   return (
-    <div className={classes.root}>
+    <div className={classes.root} style={style}>
       <MyLink to="/headphones">
         <CategoryCard title="HEADPHONES" imgSrc={headphoneLogo} />
       </MyLink>

@@ -2,15 +2,12 @@ import React, { useState } from "react";
 
 import classes from "../../styles/Counter.module.css";
 
-function Counter() {
-  const [count, setCount] = useState(1);
+function Counter({ style, count, increment, decrement }) {
   return (
-    <div className={classes.root}>
-      <span onClick={() => setCount((count) => (count === 1 ? 1 : --count))}>
-        -
-      </span>{" "}
+    <div className={classes.root} style={style}>
+      <span onClick={decrement}>-</span>
       {count}
-      <span onClick={() => setCount((count) => ++count)}>+</span>
+      <span onClick={increment}>+</span>
     </div>
   );
 }

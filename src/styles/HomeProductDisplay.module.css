@@ -41,6 +41,7 @@
   color: white;
   opacity: 0.75;
   text-align: center;
+  margin-top: 24px;
 }
 
 .product-display-two {
@@ -77,7 +78,7 @@
 .product-display-three-card {
   height: 200px;
   width: 100%;
-  background-color: var(--dark-gray);
+  background-color: var(--light-gray);
   display: flex;
   align-items: center;
 }

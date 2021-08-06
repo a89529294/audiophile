@@ -15,25 +15,31 @@ function Header() {
   const { products } = useContext(ShoppingCartContext);
 
   return (
-    <div className={classes.navbar}>
-      <img src={hamburger} className={classes.hamburger} />
-      <MyLink to="/">
-        <img src={logo} />
-      </MyLink>
-      <div
-        className={classes["cart-container"]}
-        style={{ "--width": products.length ? "15px" : "0px" }}
-        data-content={products.reduce((acc, obj) => acc + obj.quantity, 0)}
-      >
-        <img
-          src={cart}
-          className={classes.cart}
-          onClick={() => setShowCart((state) => !state)}
-        />
-      </div>
+    <>
+      <div className={classes.navbar}>
+        <img src={hamburger} className={classes.hamburger} />
+        <MyLink to="/">
+          <img src={logo} />
+        </MyLink>
+        <div
+          className={classes["cart-container"]}
+          style={{ "--width": products.length ? "15px" : "0px" }}
+          data-content={products.reduce((acc, obj) => acc + obj.quantity, 0)}
+        >
+          <img
+            src={cart}
+            className={classes.cart}
+            onClick={() => setShowCart((state) => !state)}
+          />
+        </div>
 
-      {showCart && <Cart setShowCart={setShowCart} />}
-    </div>
+        {showCart && <Cart setShowCart={setShowCart} />}
+      </div>
+      <div
+        className={classes.navbar}
+        style={{ visibility: "hidden", position: "static" }}
+      />
+    </>
   );
 }
 

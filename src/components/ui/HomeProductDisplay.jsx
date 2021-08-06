@@ -3,6 +3,7 @@ import React from "react";
 import classes from "../../styles/HomeProductDisplay.module.css";
 
 import Button from "./Button";
+import MyLink from "./MyLink";
 
 import zx9Speaker from "../../assets/home/speaker-zx9-mobile.png";
 import circlePattern from "../../assets/home/pattern-circles.svg";
@@ -26,14 +27,22 @@ function HomeProductDisplay() {
           Upgrade to premium speakers that are phenomenally built to deliver
           truly remarkable sound.
         </p>
-        <Button text="SEE PRODUCT" variant="black" style={{ marginTop: 24 }} />
+        <MyLink to="/products/6">
+          <Button
+            text="SEE PRODUCT"
+            variant="black"
+            style={{ marginTop: 24 }}
+          />
+        </MyLink>
       </div>
       <div
         className={`${classes["product-display"]} ${classes["product-display-two"]}`}
       >
         <div className={classes["product-display-two-text-box"]}>
           <h4 className={classes["product-display-two-title"]}>ZX7 SPEAKER</h4>
-          <Button variant="white" text="SEE PRODUCT" />
+          <MyLink to="/products/5">
+            <Button variant="white" text="SEE PRODUCT" />
+          </MyLink>
         </div>
       </div>
       <img
@@ -47,7 +56,9 @@ function HomeProductDisplay() {
           <h4 className={classes["product-display-three-title"]}>
             YX1 EARPHONES
           </h4>
-          <Button text="SEE PRODUCT" variant="white" />
+          <MyLink to="/products/1">
+            <Button text="SEE PRODUCT" variant="white" />
+          </MyLink>
         </div>
       </div>
     </div>

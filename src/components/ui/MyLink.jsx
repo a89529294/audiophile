@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function MyLink({ to, children, style, className }) {
+function MyLink({ to, children, style, className, onClick = () => {} }) {
   return (
     <Link
       to={to}
@@ -11,6 +11,7 @@ function MyLink({ to, children, style, className }) {
         display: "block",
       }}
       className={className}
+      onClick={onClick}
     >
       {children}
     </Link>

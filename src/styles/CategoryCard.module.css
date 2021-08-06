@@ -1,6 +1,6 @@
 .card {
   height: 165px;
-  background-color: var(--dark-gray);
+  background-color: var(--light-gray);
   position: relative;
   display: flex;
   flex-direction: column;
@@ -26,7 +26,6 @@
 }
 
 .card-title {
-  font-family: var(--font-manrope);
   font-weight: 700;
   font-size: 15px;
   line-height: 20px;

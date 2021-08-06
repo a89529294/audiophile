@@ -1,0 +1,63 @@
+.root {
+  padding: 0 48px;
+}
+
+.back {
+  composes: text-body from "./index.css";
+  margin-left: -24px;
+  margin-top: 16px;
+  color: black;
+  opacity: 0.5;
+}
+
+.title {
+  margin-top: 48px;
+}
+
+.info-block {
+  margin-top: 32px;
+}
+
+.sub-title {
+  color: var(--dark-orange);
+  margin-bottom: 16px;
+}
+
+.input-group > * {
+  margin-top: 16px;
+}
+
+.input-group > *:first-child {
+  margin-top: 0px;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+}
+
+.input > label {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.2px;
+  margin-bottom: 9px;
+}
+
+.input > input {
+  border-radius: 8px;
+  border: 1px solid var(--dark-gray);
+  height: 56px;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: -0.25px;
+  padding-left: 24px;
+}
+
+.input > input::placeholder {
+  color: black;
+  opacity: 0.4;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: -0.25px;
+}

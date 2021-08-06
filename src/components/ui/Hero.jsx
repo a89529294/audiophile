@@ -4,7 +4,13 @@ import classes from "../../styles/Hero.module.css";
 
 import Button from "./Button";
 
-function Hero() {
+function Hero({ setShowCategories, showCategories }) {
+  const initialRender = React.useRef(true);
+  React.useEffect(() => {
+    !initialRender.current && !showCategories && setShowCategories(true);
+    if (initialRender.current) initialRender.current = false;
+  }, [showCategories]);
+
   return (
     <div className={classes["hero-container"]}>
       <div className={classes["hero-text-container"]}>
@@ -14,7 +20,13 @@ function Hero() {
           Experience natural, lifelike audio and exceptional build quality made
           for the passionate music enthusiast.
         </p>
-        <Button text="SEE PRODUCTS" variant="orange" />
+        <Button
+          text="SEE PRODUCTS"
+          variant="orange"
+          onClick={() => {
+            setShowCategories((showCategories) => !showCategories);
+          }}
+        />
       </div>
     </div>
   );

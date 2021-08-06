@@ -23,9 +23,9 @@
 .btn-outline-less {
   composes: btn from "./index.css";
   composes: btn-text from "./index.css";
-  width: 60px;
-  height: 18px;
-  justify-content: space-between;
+  width: 60px !important;
+  height: 18px !important;
+  justify-content: space-between !important;
   color: black;
 }
 

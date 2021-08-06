@@ -6,13 +6,13 @@ import Button from "../ui/Button";
 import Counter from "../ui/Counter";
 import useOnClickOutside from "../../hooks/useOnClickOutside";
 import { ShoppingCartContext } from "../../contexts/ShoppingCartContext";
+import MyLink from "./MyLink";
 
 function Cart({ setShowCart }) {
   const ref = useRef();
   const { products, dispatch } = useContext(ShoppingCartContext);
-  const [numberOfItems, setNumberOfItems] = useState(
-    products.reduce((acc, obj) => acc + obj.quantity, 0)
-  );
+  const [numberOfItems, setNumberOfItems] = useState(0);
+  const [totalPrice, setTotalPrice] = useState(0);
 
   useEffect(() => {
     document.body.style.overflow = "hidden";
@@ -21,6 +21,9 @@ function Cart({ setShowCart }) {
 
   useEffect(() => {
     setNumberOfItems(products.reduce((acc, obj) => acc + obj.quantity, 0));
+    setTotalPrice(
+      products.reduce((acc, obj) => acc + obj.quantity * obj.price, 0)
+    );
   }, [products]);
 
   useOnClickOutside(ref, () => setShowCart(false));
@@ -80,13 +83,15 @@ function Cart({ setShowCart }) {
         </div>
         <div className={classes.total}>
           <p className={classes["total-tag"]}>TOTAL</p>
-          <p className={classes["total-price"]}>${numberOfItems}</p>
+          <p className={classes["total-price"]}>${totalPrice}</p>
         </div>
-        <Button
-          text="CHECKOUT"
-          variant="orange"
-          style={{ width: "100%", marginTop: "24px" }}
-        />
+        <MyLink to="/checkout" onClick={() => setShowCart(false)}>
+          <Button
+            text="CHECKOUT"
+            variant="orange"
+            style={{ width: "100%", marginTop: "24px" }}
+          />
+        </MyLink>
       </div>
     </div>
   );

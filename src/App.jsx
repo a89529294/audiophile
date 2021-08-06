@@ -9,6 +9,7 @@ import Footer from "./components/ui/Footer";
 import Category from "./components/pages/Category";
 import ScrollToTop from "./components/util/ScrollToTop";
 import ProductDetail from "./components/pages/ProductDetail.jsx";
+import Checkout from "./components/pages/Checkout";
 
 function App() {
   return (
@@ -29,6 +30,9 @@ function App() {
             </Route>
             <Route exact path="/products/:id">
               <ProductDetail />
+            </Route>
+            <Route exact path="/checkout">
+              <Checkout />
             </Route>
             <Route exact path="/">
               <Home />

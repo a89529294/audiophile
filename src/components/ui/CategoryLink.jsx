@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 
 import classes from "../../styles/CategoryLink.module.css";
 
@@ -9,9 +9,18 @@ import headphoneLogo from "../../assets/home/category-logo-headphone.svg";
 import speakerLogo from "../../assets//home/category-logo-speaker.svg";
 import earphoneLogo from "../../assets/home/category-logo-earphone.svg";
 
-function CategoryLink({ style }) {
+function CategoryLink({ style, showCategories }) {
+  const ref = useRef();
+
+  useEffect(() => {
+    showCategories &&
+      ref.current.scrollIntoView({
+        behavior: "smooth",
+      });
+  }, [showCategories]);
+
   return (
-    <div className={classes.root} style={style}>
+    <div className={classes.root} style={style} ref={ref}>
       <MyLink to="/headphones">
         <CategoryCard title="HEADPHONES" imgSrc={headphoneLogo} />
       </MyLink>

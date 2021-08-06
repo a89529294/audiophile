@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import classes from "../../styles/Home.module.css";
 
@@ -9,11 +9,16 @@ import HomeProductDisplay from "../ui/HomeProductDisplay";
 import CategoryLink from "../ui/CategoryLink";
 
 function Home() {
+  const [showCategories, setShowCategories] = useState(false);
+
   return (
     <div>
-      <Hero />
+      <Hero
+        setShowCategories={setShowCategories}
+        showCategories={showCategories}
+      />
       <div className={classes.layout}>
-        <CategoryLink />
+        <CategoryLink showCategories={showCategories} />
         <HomeProductDisplay />
         <Ad />
       </div>

@@ -1,24 +1,24 @@
 .root {
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-top: 64px;
-  padding-bottom: 120px;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+  padding-top: 6.4rem;
+  padding-bottom: 12rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .root > * {
-  margin-top: 120px;
+  margin-top: 12rem;
 }
 
 .root > *:first-child {
-  margin-top: 0px;
+  margin-top: 0rem;
 }
 
 .title-container {
   background-color: var(--dark-blue);
-  padding: 32px 84px;
+  padding: 3.2rem 8.4rem;
 }
 
 .title {

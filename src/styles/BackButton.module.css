@@ -1,0 +1,6 @@
+.back {
+  composes: text-body from "./index.css";
+  color: black;
+  opacity: 0.5;
+  width: fit-content;
+}

@@ -1,9 +1,9 @@
 .hero-container {
-  height: 510px;
+  height: 51rem;
   display: flex;
   align-items: center;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
   background-image: url("../assets/home/image-hero-mobile.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
@@ -20,14 +20,14 @@
   composes: overline from "./index.css";
   color: white;
   opacity: 0.5;
-  margin-bottom: 16px;
+  margin-bottom: 1.6rem;
 }
 
 .hero-title {
   composes: mobile-title from "./index.css";
   color: white;
   text-align: center;
-  margin-bottom: 24px;
+  margin-bottom: 2.4rem;
 }
 
 .hero-body {
@@ -35,5 +35,5 @@
   color: white;
   opacity: 0.75;
   text-align: center;
-  margin-bottom: 28px;
+  margin-bottom: 2.8rem;
 }

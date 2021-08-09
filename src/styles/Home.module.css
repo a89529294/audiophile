@@ -1,14 +1,14 @@
 .layout {
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-top: 40px;
-  padding-bottom: 120px;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+  padding-top: 4rem;
+  padding-bottom: 12rem;
 }
 
 .layout > * {
-  margin-top: 120px;
+  margin-top: 12rem;
 }
 
 .layout > *:first-child {
-  margin-top: 0px;
+  margin-top: 0rem;
 }

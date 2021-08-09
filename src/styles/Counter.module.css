@@ -1,7 +1,7 @@
 .root {
   composes: btn-text from "./index.css";
-  width: 120px;
-  height: 48px;
+  width: 12rem;
+  height: 4.8rem;
   background-color: var(--light-gray);
   display: flex;
   justify-content: space-around;

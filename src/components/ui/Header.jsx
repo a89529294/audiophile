@@ -23,7 +23,7 @@ function Header() {
         </MyLink>
         <div
           className={classes["cart-container"]}
-          style={{ "--width": products.length ? "15px" : "0px" }}
+          style={{ "--width": products.length ? "1.5rem" : "0rem" }}
           data-content={products.reduce((acc, obj) => acc + obj.quantity, 0)}
         >
           <img

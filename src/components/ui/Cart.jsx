@@ -7,6 +7,7 @@ import Counter from "../ui/Counter";
 import useOnClickOutside from "../../hooks/useOnClickOutside";
 import { ShoppingCartContext } from "../../contexts/ShoppingCartContext";
 import MyLink from "./MyLink";
+import Portal from "../ui/Portal";
 
 function Cart({ setShowCart }) {
   const ref = useRef();
@@ -29,7 +30,7 @@ function Cart({ setShowCart }) {
   useOnClickOutside(ref, () => setShowCart(false));
 
   return (
-    <div className={classes.bg}>
+    <Portal variant="cart">
       <div className={classes.cart} ref={ref}>
         <div className={classes.title}>
           <h6>CART ({numberOfItems})</h6>
@@ -51,7 +52,7 @@ function Cart({ setShowCart }) {
                 </p>
               </div>
               <Counter
-                style={{ width: "96px", height: "32px" }}
+                style={{ width: "9.6rem", height: "3.2rem" }}
                 count={obj.quantity}
                 increment={() =>
                   dispatch({
@@ -89,11 +90,11 @@ function Cart({ setShowCart }) {
           <Button
             text="CHECKOUT"
             variant="orange"
-            style={{ width: "100%", marginTop: "24px" }}
+            style={{ width: "100%", marginTop: "2.4rem" }}
           />
         </MyLink>
       </div>
-    </div>
+    </Portal>
   );
 }
 

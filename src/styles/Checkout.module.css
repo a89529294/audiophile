@@ -1,34 +1,33 @@
 .root {
-  padding: 0 48px;
+  position: relative;
+  background-color: var(--light-gray);
+  padding-top: 6.5rem;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+  padding-bottom: 10rem;
 }
 
-.back {
-  composes: text-body from "./index.css";
-  margin-left: -24px;
-  margin-top: 16px;
-  color: black;
-  opacity: 0.5;
-}
-
-.title {
-  margin-top: 48px;
+.info-root {
+  background-color: white;
+  padding: 2.4rem 2.4rem 3.1rem 2.4rem;
 }
 
 .info-block {
-  margin-top: 32px;
+  margin-top: 3.2rem;
 }
 
 .sub-title {
+  composes: sub-title from "./index.css";
   color: var(--dark-orange);
-  margin-bottom: 16px;
+  margin-bottom: 1.6rem;
 }
 
 .input-group > * {
-  margin-top: 16px;
+  margin-top: 1.6rem;
 }
 
 .input-group > *:first-child {
-  margin-top: 0px;
+  margin-top: 0rem;
 }
 
 .input {
@@ -36,28 +35,132 @@
   flex-direction: column;
 }
 
-.input > label {
+.input > label,
+.payment-method-title {
   font-weight: 700;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: -0.2px;
-  margin-bottom: 9px;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  letter-spacing: -0.02rem;
+  margin-bottom: 0.9rem;
 }
 
-.input > input {
-  border-radius: 8px;
-  border: 1px solid var(--dark-gray);
-  height: 56px;
-  font-size: 14px;
-  line-height: 19px;
-  letter-spacing: -0.25px;
-  padding-left: 24px;
+.input > input,
+.payment-radio-container {
+  border-radius: 0.8rem;
+  border: 0.1rem solid var(--dark-gray);
+  height: 5.6rem;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  letter-spacing: -0.025rem;
+  padding-left: 2.4rem;
 }
 
 .input > input::placeholder {
   color: black;
   opacity: 0.4;
-  font-size: 14px;
-  line-height: 19px;
-  letter-spacing: -0.25px;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  letter-spacing: -0.025rem;
+}
+
+.payment-method-body > * {
+  margin-top: 1.6rem;
+}
+
+.payment-method-body > *:first-child {
+  margin-top: 0rem;
+}
+
+.payment-radio-container {
+  display: flex;
+  align-items: center;
+  padding-left: 1.6rem;
+}
+
+.payment-radio-container > label {
+  margin-left: 1.6rem;
+}
+
+.summary-root {
+  background-color: white;
+  padding: 3.2rem 2.4rem;
+}
+
+.summary-root > * {
+  margin-top: 3.2rem;
+}
+
+.summary-root > *:first-child {
+  margin-top: 0rem;
+}
+
+.summary-items > * {
+  margin-top: 2.4rem;
+}
+
+.summary-items > *:first-child {
+  margin-top: 0rem;
+}
+
+.summary-item {
+  display: flex;
+}
+
+.item-img {
+  width: 6.4rem;
+  height: 6.4rem;
+  object-fit: cover;
+}
+
+.summary-item-desc {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.summary-item-name-quantity {
+  composes: text-body from "./index.css";
+  font-weight: 700 !important;
+  display: flex;
+  justify-content: space-between;
+}
+
+.summary-item-name-quantity > *:last-child {
+  opacity: 0.5;
+}
+
+.summary-item-price {
+  composes: sub-title from "./index.css";
+  opacity: 0.5;
+}
+
+.total-cost-summary > * {
+  margin-top: 0.8rem;
+}
+
+.total-cost-summary > *:first-child {
+  margin-top: 0rem;
+}
+
+.cost-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cost-row-name {
+  composes: text-body from "./index.css";
+  opacity: 0.5;
+}
+
+.cost-row.standout {
+  margin-top: 2.4rem;
+}
+
+.cost-row.standout > .cost-row-name {
+  opacity: 0.7;
+}
+
+.cost-row.standout > .cost-row-cost {
+  color: var(--dark-orange);
 }

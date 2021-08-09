@@ -12,6 +12,7 @@ import Button from "../ui/Button";
 import MyLink from "../ui/MyLink";
 import CategoryLink from "../ui/CategoryLink";
 import Ad from "../ui/Ad";
+import BackButton from "../ui/BackButton";
 
 function ProductDetail() {
   let { screenSize } = useContext(MediaQueryContext);
@@ -29,9 +30,7 @@ function ProductDetail() {
 
   return (
     <div className={classes.root}>
-      <div className={classes.back} onClick={() => history.goBack()}>
-        Go Back
-      </div>
+      <BackButton style={{ marginTop: "1.6rem" }} />
       <img
         src={productObj?.image?.[screenSize]}
         className={classes["main-img"]}
@@ -112,8 +111,8 @@ function ProductDetail() {
         ))}
       </div>
 
-      <CategoryLink style={{ marginTop: "120px" }} />
-      <Ad style={{ marginTop: "120px", marginBottom: "120px" }} />
+      <CategoryLink style={{ marginTop: "12rem" }} />
+      <Ad style={{ marginTop: "12rem", marginBottom: "12rem" }} />
     </div>
   );
 }

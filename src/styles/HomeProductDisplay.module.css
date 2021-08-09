@@ -1,16 +1,16 @@
 .home-page-product-display {
-  margin-top: 120px;
+  margin-top: 12rem;
 }
 
 .home-page-product-display > .product-display {
-  margin-bottom: 24px;
+  margin-bottom: 2.4rem;
 }
 
 .product-display-one {
-  height: 600px;
+  height: 60rem;
   background-color: var(--dark-orange);
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: 0.8rem;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -25,15 +25,15 @@
 }
 
 .product-display-one-image {
-  width: 172px;
-  margin-top: 55px;
+  width: 17.2rem;
+  margin-top: 5.5rem;
 }
 
 .product-display-one-title {
   composes: mobile-title from "./index.css";
   color: white;
   text-align: center;
-  margin-top: 32px;
+  margin-top: 3.2rem;
 }
 
 .product-display-one-desc {
@@ -41,24 +41,24 @@
   color: white;
   opacity: 0.75;
   text-align: center;
-  margin-top: 24px;
+  margin-top: 2.4rem;
 }
 
 .product-display-two {
-  border-radius: 8px;
-  height: 320px;
+  border-radius: 0.8rem;
+  height: 3.2rem;
   background-image: url("../assets/home/speaker-zx7-mobile.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
-  height: 320px;
+  height: 32rem;
 }
 
 .product-display-two-text-box {
-  width: 204px;
-  height: 118px;
-  margin-left: 24px;
+  width: 20.4rem;
+  height: 11.8rem;
+  margin-left: 2.4rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -69,14 +69,14 @@
 }
 
 .product-display-three-img {
-  border-radius: 8px;
+  border-radius: 0.8rem;
   width: 100%;
-  height: 200px;
+  height: 20rem;
   object-fit: cover;
 }
 
 .product-display-three-card {
-  height: 200px;
+  height: 20rem;
   width: 100%;
   background-color: var(--light-gray);
   display: flex;
@@ -84,9 +84,9 @@
 }
 
 .product-display-three-text {
-  width: 247px;
-  height: 118px;
-  margin-left: 24px;
+  width: 24.7rem;
+  height: 11.8rem;
+  margin-left: 2.4rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -96,7 +96,7 @@
   color: black;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 48rem) {
   .circle-pattern {
     width: 130%;
     max-width: 130%;

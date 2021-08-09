@@ -1,0 +1,58 @@
+.order-confirmation {
+  background-color: white;
+  padding: 3.2rem;
+  width: 100%;
+  border-radius: 0.8rem;
+}
+
+.order-confirmation > * {
+  margin-top: 2.4rem;
+}
+
+.order-confirmation > *:first-child {
+  margin-top: 0rem;
+}
+
+.checkmark-container {
+  width: 6.4rem;
+  height: 6.4rem;
+  border-radius: 50%;
+  background-color: var(--dark-orange);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkmark-img {
+  width: 2.25rem;
+  height: 1.6rem;
+}
+
+.title {
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  font-weight: 700;
+  letter-spacing: 0.09rem;
+}
+
+.text-body {
+  composes: text-body from "./index.css";
+  opacity: 0.5;
+}
+
+.total {
+  background-color: black;
+  padding: 15px 24px;
+  border-radius: 0 0 0.8rem 0.8rem;
+}
+
+.total-title {
+  composes: text-body from "./index.css";
+  color: white;
+  opacity: 0.5;
+  margin-bottom: 0.8rem;
+}
+
+.total-price {
+  color: white;
+}

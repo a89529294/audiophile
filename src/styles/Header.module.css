@@ -3,24 +3,24 @@
   justify-content: space-between;
   align-items: center;
   background-color: var(--dark-blue);
-  padding: 0px 24px;
-  border-bottom: 1px solid rgba(172, 167, 167, 0.3);
+  padding: 0rem 2.4rem;
+  border-bottom: 0.1rem solid rgba(172, 167, 167, 0.3);
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1;
-  height: 90px;
+  height: 9rem;
 }
 
 .hamburger {
-  width: 16px;
-  height: 15px;
+  width: 1.6rem;
+  height: 1.5rem;
 }
 
 .cart {
-  width: 23px;
-  height: 16px;
+  width: 2.3rem;
+  height: 1.6rem;
 }
 
 .cart-container {
@@ -33,11 +33,11 @@
   top: 0;
   content: attr(data-content);
   width: var(--width);
-  height: 15px;
+  height: 1.5rem;
   background-color: var(--dark-orange);
   transform: translate(-50%, -50%);
-  border-radius: 5px;
-  font-size: 13px;
+  border-radius: 0.5rem;
+  font-size: 1.3rem;
   display: flex;
   justify-content: center;
   align-items: center;

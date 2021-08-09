@@ -1,36 +1,36 @@
 .card {
-  height: 165px;
+  height: 16.5rem;
   background-color: var(--light-gray);
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 68px;
-  border-radius: 8px;
+  margin-top: 6.8rem;
+  border-radius: 0.8rem;
 }
 
 .card-img {
-  height: 104px;
+  height: 10.4rem;
   position: absolute;
   transform: translate(-50%, -50%);
   left: 50%;
 }
 
 .card-img-blur {
-  width: 95px;
-  height: 14px;
-  border-radius: 48px/7px;
+  width: 9.5rem;
+  height: 1.4rem;
+  border-radius: 4.8rem/0.7rem;
   background-color: black;
-  margin-top: 42px;
-  filter: blur(13px);
+  margin-top: 4.2rem;
+  filter: blur(1.3rem);
 }
 
 .card-title {
   font-weight: 700;
-  font-size: 15px;
-  line-height: 20px;
-  letter-spacing: 1.07px;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  letter-spacing: 0.107rem;
   color: black;
-  margin-bottom: 17px;
-  margin-top: 32px;
+  margin-bottom: 1.7rem;
+  margin-top: 3.2rem;
 }

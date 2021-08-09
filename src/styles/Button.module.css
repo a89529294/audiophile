@@ -16,15 +16,15 @@
   composes: btn from "./index.css";
   composes: btn-text from "./index.css";
   background-color: white;
-  border: 1px solid black;
+  border: 0.1rem solid black;
   color: black;
 }
 
 .btn-outline-less {
   composes: btn from "./index.css";
   composes: btn-text from "./index.css";
-  width: 60px !important;
-  height: 18px !important;
+  width: 6rem !important;
+  height: 1.8rem !important;
   justify-content: space-between !important;
   color: black;
 }

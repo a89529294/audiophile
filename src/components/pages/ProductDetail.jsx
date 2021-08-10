@@ -18,7 +18,6 @@ function ProductDetail() {
   let { screenSize } = useContext(MediaQueryContext);
   let { dispatch } = useContext(ShoppingCartContext);
   let { id } = useParams();
-  let history = useHistory();
 
   const [productObj, setProductObj] = React.useState({});
   const [produnctCount, setProductCount] = React.useState(1);
@@ -30,40 +29,57 @@ function ProductDetail() {
 
   return (
     <div className={classes.root}>
-      <BackButton style={{ marginTop: "1.6rem" }} />
-      <img
-        src={productObj?.image?.[screenSize]}
-        className={classes["main-img"]}
+      <BackButton
+        style={{
+          marginTop:
+            screenSize === "desktop"
+              ? "8rem"
+              : screenSize === "tablet"
+              ? "3.3rem"
+              : "1.6rem",
+        }}
       />
-      <h4 className={classes.title}>{productObj.name}</h4>
-      <p className={classes.description}>{productObj.description}</p>
-      <h6 className={classes.price}>${productObj.price}</h6>
-      <div className={classes["btns-container"]}>
-        <Counter
-          count={produnctCount}
-          increment={() => setProductCount((count) => ++count)}
-          decrement={() =>
-            setProductCount((count) => (count > 1 ? --count : 1))
-          }
+      <div className={classes["product-view"]}>
+        <img
+          src={productObj?.image?.[screenSize]}
+          className={classes["main-img"]}
         />
-        <Button
-          variant="orange"
-          text="ADD TO CART"
-          onClick={() => {
-            dispatch({
-              type: "addItem",
-              payload: {
-                id: productObj.id,
-                cartName: productObj.cartName,
-                price: productObj.price,
-                quantity: produnctCount,
-                img: productObj.image.mobile,
-              },
-            });
-            setProductCount(1);
-          }}
-        />
+        <div className={classes["product-desc"]}>
+          {productObj.new && (
+            <div className={classes.overline}>NEW PRODUCT</div>
+          )}
+          <h4 className={classes.title}>{productObj.name}</h4>
+          <p className={classes.description}>{productObj.description}</p>
+          <h6 className={classes.price}>${productObj.price}</h6>
+          <div className={classes["btns-container"]}>
+            <Counter
+              count={produnctCount}
+              increment={() => setProductCount((count) => ++count)}
+              decrement={() =>
+                setProductCount((count) => (count > 1 ? --count : 1))
+              }
+            />
+            <Button
+              variant="orange"
+              text="ADD TO CART"
+              onClick={() => {
+                dispatch({
+                  type: "addItem",
+                  payload: {
+                    id: productObj.id,
+                    cartName: productObj.cartName,
+                    price: productObj.price,
+                    quantity: produnctCount,
+                    img: productObj.image.mobile,
+                  },
+                });
+                setProductCount(1);
+              }}
+            />
+          </div>
+        </div>
       </div>
+
       <div className={classes.features}>
         <p className={classes["feature-title"]}>FEATURES</p>
         <p className={classes["features-body"]}>{productObj.features}</p>
@@ -97,18 +113,20 @@ function ProductDetail() {
       </div>
       <div className={classes.others}>
         <p className={classes["others-title"]}>YOU MAY ALSO LIKE</p>
-        {productObj?.others?.map((obj, i) => (
-          <div className={classes["others-item"]} key={i}>
-            <img
-              src={obj.image[screenSize]}
-              className={classes["others-item-img"]}
-            />
-            <h5>{obj.name}</h5>
-            <MyLink to={`/products/${obj.id}`}>
-              <Button text="SEE PRODUCT" variant="orange" />
-            </MyLink>
-          </div>
-        ))}
+        <div className={classes["others-item-container"]}>
+          {productObj?.others?.map((obj, i) => (
+            <div className={classes["others-item"]} key={i}>
+              <img
+                src={obj.image[screenSize]}
+                className={classes["others-item-img"]}
+              />
+              <h5>{obj.name}</h5>
+              <MyLink to={`/products/${obj.id}`}>
+                <Button text="SEE PRODUCT" variant="orange" />
+              </MyLink>
+            </div>
+          ))}
+        </div>
       </div>
 
       <CategoryLink style={{ marginTop: "12rem" }} />

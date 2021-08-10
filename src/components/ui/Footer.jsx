@@ -33,11 +33,13 @@ function Footer() {
         helping you get the most out of personal audio. Come and visit our demo
         facility - we’re open 7 days a week.
       </div>
-      <div className={classes.body}>Copyright 2021. All Rights Reserved</div>
-      <div className={classes["social-media"]}>
-        <img src={facebook} />
-        <img src={twitter} />
-        <img src={instagram} />
+      <div className={classes["copy-right-social-media"]}>
+        <div className={classes.body}>Copyright 2021. All Rights Reserved</div>
+        <div className={classes["social-media"]}>
+          <img src={facebook} />
+          <img src={twitter} />
+          <img src={instagram} />
+        </div>
       </div>
     </div>
   );

@@ -2,10 +2,10 @@
   height: 51rem;
   display: flex;
   align-items: center;
+  justify-content: center;
   padding-left: 2.4rem;
   padding-right: 2.4rem;
-  background-image: url("../assets/home/image-hero-mobile.jpg");
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
 }
@@ -36,4 +36,15 @@
   opacity: 0.75;
   text-align: center;
   margin-bottom: 2.8rem;
+}
+@media (min-width: 30rem) {
+  .hero-container {
+    height: 64rem;
+  }
+
+  .hero-title {
+    font-size: 5.6rem !important;
+    line-height: 5.8rem !important;
+    letter-spacing: 0.2rem !important;
+  }
 }

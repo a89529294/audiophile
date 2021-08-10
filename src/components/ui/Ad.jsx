@@ -3,11 +3,26 @@ import React from "react";
 import classes from "../../styles/Ad.module.css";
 
 import bestGear from "../../assets/home/image-best-gear-mobile.jpg";
+import bestGearTablet from "../../assets/home/image-best-gear-tablet.jpg";
+import bestGearDesktop from "../../assets/home/image-best-gear-desktop.jpg";
+
+import { MediaQueryContext } from "../../contexts/MediaQueryContext";
 
 function Ad({ style }) {
+  const { screenSize } = React.useContext(MediaQueryContext);
+
   return (
     <div style={style}>
-      <img src={bestGear} className={classes["best-gear"]} />
+      <img
+        src={
+          screenSize === "desktop"
+            ? bestGearDesktop
+            : screenSize === "tablet"
+            ? bestGearTablet
+            : bestGear
+        }
+        className={classes["best-gear"]}
+      />
       <h4 className={classes.title}>
         Bringing you the <span>best</span> audio gear
       </h4>

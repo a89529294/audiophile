@@ -4,6 +4,7 @@ import classes from "../../styles/CategoryProduct.module.css";
 
 import Button from "../ui/Button";
 import MyLink from "./MyLink";
+import { MediaQueryContext } from "../../contexts/MediaQueryContext";
 
 function CategoryProduct({
   name = "",
@@ -12,12 +13,19 @@ function CategoryProduct({
   id,
   newProduct = false,
 }) {
+  const { screenSize } = React.useContext(MediaQueryContext);
   return (
     <div>
       <img src={imgStr} className={classes.img} />
       <div className={classes["description-card"]}>
         {newProduct && <p className={classes.overline}>NEW PRODUCT</p>}
-        <h4 className={classes.title}>{name}</h4>
+        {screenSize !== "mobile" ? (
+          <h2 className={classes.title} style={{ maxWidth: "35rem" }}>
+            {name}
+          </h2>
+        ) : (
+          <h4 className={classes.title}>{name}</h4>
+        )}
         <p className={classes.body}>{desc}</p>
         <MyLink
           to={`products/${id}`}

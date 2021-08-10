@@ -2,22 +2,29 @@ import React, { useState, useContext } from "react";
 
 import classes from "../../styles/Header.module.css";
 
-import MyLink from "../ui/MyLink";
-
 import logo from "../../assets/home/logo.svg";
 import hamburger from "../../assets/header/icon-hamburger.svg";
 import cart from "../../assets/header/icon-cart.svg";
+
 import Cart from "./Cart";
 import { ShoppingCartContext } from "../../contexts/ShoppingCartContext";
+import MyLink from "../ui/MyLink";
+import Portal from "../ui/Portal";
+import Menu from "./Menu";
 
 function Header() {
   const [showCart, setShowCart] = useState(false);
   const { products } = useContext(ShoppingCartContext);
+  const [showMenu, setShowMenu] = useState(false);
 
   return (
     <>
       <div className={classes.navbar}>
-        <img src={hamburger} className={classes.hamburger} />
+        <img
+          src={hamburger}
+          className={classes.hamburger}
+          onClick={() => setShowMenu(true)}
+        />
         <MyLink to="/">
           <img src={logo} />
         </MyLink>
@@ -34,11 +41,18 @@ function Header() {
         </div>
 
         {showCart && <Cart setShowCart={setShowCart} />}
+        {showMenu && (
+          <Portal variant="mobileMenu">
+            <Menu setShowMenu={setShowMenu} />
+          </Portal>
+        )}
       </div>
       <div
         className={classes.navbar}
         style={{ visibility: "hidden", position: "static" }}
-      />
+      >
+        <img src={logo} />
+      </div>
     </>
   );
 }

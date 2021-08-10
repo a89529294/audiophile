@@ -2,3 +2,19 @@
   width: 100%;
   scroll-margin-top: 20rem;
 }
+
+@media (min-width: 30rem) {
+  .root {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+  }
+}
+
+@media (min-width: 76rem) {
+  .root {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3rem;
+  }
+}

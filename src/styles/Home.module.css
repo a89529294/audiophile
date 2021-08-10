@@ -12,3 +12,17 @@
 .layout > *:first-child {
   margin-top: 0rem;
 }
+
+@media (min-width: 30rem) {
+  .layout {
+    padding: 9.6rem 4rem;
+  }
+
+  .layout > * {
+    margin-top: 9.6rem;
+  }
+
+  .layout > *:first-child {
+    margin-top: 0rem;
+  }
+}

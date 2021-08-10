@@ -4,8 +4,8 @@ import { useMediaQuery } from "react-responsive";
 export const MediaQueryContext = createContext(null);
 
 export default function MyContext({ children }) {
-  const isDesktop = useMediaQuery({ minWidth: 1025 });
-  const isTablet = useMediaQuery({ minWidth: 480, maxWidth: 1024 });
+  const isDesktop = useMediaQuery({ query: "(min-width: 76rem)" });
+  const isTablet = useMediaQuery({ query: "(min-width: 30rem)" });
   const [screenSize, setScreenSize] = useState("mobile");
 
   React.useEffect(() => {

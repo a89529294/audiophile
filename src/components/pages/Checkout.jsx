@@ -122,7 +122,6 @@ function Checkout() {
       </div>
       {showOrderConfirmation && (
         <OrderConfirmationModal
-          setShowOrderConfirmation={setShowOrderConfirmation}
           totalPrice={(totalPrice + 50 + totalPrice * 0.1).toFixed(0)}
         />
       )}

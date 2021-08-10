@@ -1,4 +1,5 @@
-import React, { useEffect, useRef, useContext, useState } from "react";
+import React, { useEffect, useRef } from "react";
+import { useHistory } from "react-router";
 
 import classes from "../../styles/OrderConfirmationModal.module.css";
 
@@ -9,15 +10,11 @@ import useOnClickOutside from "../../hooks/useOnClickOutside";
 import Portal from "./Portal";
 import MyLink from "../ui/MyLink";
 
-function OrderConfirmationModal({ setShowOrderConfirmation, totalPrice }) {
+function OrderConfirmationModal({ totalPrice }) {
   const ref = useRef();
+  const history = useHistory();
 
-  useEffect(() => {
-    document.body.style.overflow = "hidden";
-    return () => (document.body.style.overflow = "unset");
-  }, []);
-
-  useOnClickOutside(ref, () => setShowOrderConfirmation(false));
+  useOnClickOutside(ref, () => history.push("/"));
 
   return (
     <Portal variant="orderConfirmation">
@@ -36,7 +33,7 @@ function OrderConfirmationModal({ setShowOrderConfirmation, totalPrice }) {
           <h6 className={classes["total-price"]}>${totalPrice}</h6>
         </div>
         <MyLink to="/">
-          <Button text="BACK TO HOME" style={{ width: "100%" }} onClick={{}} />
+          <Button text="BACK TO HOME" style={{ width: "100%" }} />
         </MyLink>
       </div>
     </Portal>

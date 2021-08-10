@@ -5,8 +5,8 @@
   --light-gray: #f1f1f1;
   --dark-gray: #cfcfcf;
   --font-manrope: "Manrope", sans-serif;
-  --tablet-min-width: 48.1rem;
-  --laptop-min-width: 122.4rem;
+  --tablet-min-width: 30rem;
+  --laptop-min-width: 76rem;
 }
 
 html {

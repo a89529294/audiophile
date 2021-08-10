@@ -25,3 +25,9 @@
   color: white;
   text-transform: uppercase;
 }
+
+@media (min-width: 30rem) {
+  .root {
+    padding: 12rem 4rem;
+  }
+}

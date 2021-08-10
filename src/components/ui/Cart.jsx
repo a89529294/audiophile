@@ -16,11 +16,6 @@ function Cart({ setShowCart }) {
   const [totalPrice, setTotalPrice] = useState(0);
 
   useEffect(() => {
-    document.body.style.overflow = "hidden";
-    return () => (document.body.style.overflow = "unset");
-  }, []);
-
-  useEffect(() => {
     setNumberOfItems(products.reduce((acc, obj) => acc + obj.quantity, 0));
     setTotalPrice(
       products.reduce((acc, obj) => acc + obj.quantity * obj.price, 0)

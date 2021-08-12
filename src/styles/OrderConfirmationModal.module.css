@@ -56,3 +56,9 @@
 .total-price {
   color: white;
 }
+
+@media (min-width: 30rem) {
+  .order-confirmation {
+    max-width: 540px;
+  }
+}

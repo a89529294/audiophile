@@ -31,3 +31,9 @@
     padding: 12rem 4rem;
   }
 }
+
+@media (min-width: 76rem) {
+  .root {
+    padding: 16rem 16.5rem;
+  }
+}

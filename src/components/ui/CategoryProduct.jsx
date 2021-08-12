@@ -15,7 +15,7 @@ function CategoryProduct({
 }) {
   const { screenSize } = React.useContext(MediaQueryContext);
   return (
-    <div>
+    <div className={classes.root}>
       <img src={imgStr} className={classes.img} />
       <div className={classes["description-card"]}>
         {newProduct && <p className={classes.overline}>NEW PRODUCT</p>}
@@ -30,8 +30,8 @@ function CategoryProduct({
         <MyLink
           to={`products/${id}`}
           style={{
-            marginLeft: "auto",
-            marginRight: "auto",
+            marginLeft: screenSize === "desktop" ? "unset" : "auto",
+            marginRight: screenSize === "desktop" ? "unset" : "auto",
             width: "fit-content",
           }}
         >

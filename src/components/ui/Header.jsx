@@ -8,6 +8,7 @@ import cart from "../../assets/header/icon-cart.svg";
 
 import Cart from "./Cart";
 import { ShoppingCartContext } from "../../contexts/ShoppingCartContext";
+import { MediaQueryContext } from "../../contexts/MediaQueryContext";
 import MyLink from "../ui/MyLink";
 import Portal from "../ui/Portal";
 import Menu from "./Menu";
@@ -16,18 +17,38 @@ function Header() {
   const [showCart, setShowCart] = useState(false);
   const { products } = useContext(ShoppingCartContext);
   const [showMenu, setShowMenu] = useState(false);
+  const { screenSize } = useContext(MediaQueryContext);
 
   return (
     <>
       <div className={classes.navbar}>
-        <img
-          src={hamburger}
-          className={classes.hamburger}
-          onClick={() => setShowMenu(true)}
-        />
+        {screenSize !== "desktop" && (
+          <img
+            src={hamburger}
+            className={classes.hamburger}
+            onClick={() => setShowMenu(true)}
+          />
+        )}
+
         <MyLink to="/">
           <img src={logo} />
         </MyLink>
+        {screenSize === "desktop" && (
+          <div className={classes["category-links"]}>
+            <MyLink to="/" style={{ color: "white" }}>
+              HOME
+            </MyLink>
+            <MyLink to="/headphones" style={{ color: "white" }}>
+              HEADPHONES
+            </MyLink>
+            <MyLink to="/speakers" style={{ color: "white" }}>
+              SPEAKERS
+            </MyLink>
+            <MyLink to="/earphones" style={{ color: "white" }}>
+              EARPHONES
+            </MyLink>
+          </div>
+        )}
         <div
           className={classes["cart-container"]}
           style={{ "--width": products.length ? "1.5rem" : "0rem" }}

@@ -1,6 +1,8 @@
 .cart {
   padding: 3.2rem 2.8rem;
   background-color: white;
+  min-width: 300px;
+  align-self: flex-start;
 }
 
 .title {
@@ -72,4 +74,10 @@
   composes: text-body from "./index.css";
   color: black;
   font-weight: 700 !important;
+}
+
+@media (min-width: 30rem) {
+  .cart {
+    min-width: 350px;
+  }
 }

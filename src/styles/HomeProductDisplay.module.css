@@ -17,6 +17,12 @@
   padding: 5.5rem 0rem;
 }
 
+.product-display-one-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .circle-pattern {
   width: 170%;
   max-width: 170%;
@@ -114,5 +120,50 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 1rem;
+  }
+}
+
+@media (min-width: 76rem) {
+  .product-display-one {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding: 0rem;
+  }
+
+  .product-display-one-image {
+    align-self: flex-end;
+    width: 37%;
+    margin-top: 9.6rem;
+    position: relative;
+  }
+
+  .product-display-one-text-container {
+    align-items: flex-start;
+  }
+
+  .product-display-one-text-container > * {
+    text-align: left;
+  }
+
+  .circle-pattern {
+    width: 90%;
+    position: absolute;
+    transform: translate(-23%, 10%);
+  }
+
+  .product-display-two {
+    background-image: url("../assets/home/speaker-zx7-desktop.jpg");
+    background-position: right;
+    padding: 10rem 10rem;
+  }
+
+  .product-display-three-img {
+    height: 32rem;
+  }
+
+  .product-display-three-card {
+    height: 32rem;
+    padding: 10rem;
   }
 }

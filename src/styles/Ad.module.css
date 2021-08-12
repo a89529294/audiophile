@@ -22,3 +22,26 @@
   opacity: 0.5;
   text-align: center;
 }
+
+@media (min-width: 76rem) {
+  .root {
+    display: grid;
+    grid-template-columns: 0.45fr 0.55fr;
+    column-gap: 12.5rem;
+  }
+
+  .best-gear {
+    grid-column: 2;
+    height: 58rem;
+  }
+
+  .ad-text {
+    grid-column: 1;
+    grid-row: 1;
+    align-self: center;
+  }
+
+  .ad-text > * {
+    text-align: left;
+  }
+}

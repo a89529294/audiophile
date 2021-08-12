@@ -48,3 +48,23 @@
     letter-spacing: 0.2rem !important;
   }
 }
+
+@media (min-width: 76rem) {
+  .hero-container {
+    padding-left: 16.5rem;
+    justify-content: flex-start;
+  }
+
+  .hero-text-container {
+    width: 38rem;
+    align-items: flex-start;
+  }
+
+  .hero-title {
+    text-align: left;
+  }
+
+  .hero-body {
+    text-align: left;
+  }
+}

@@ -26,3 +26,17 @@
     margin-top: 0rem;
   }
 }
+
+@media (min-width: 76rem) {
+  .layout {
+    padding: 12rem 16.5rem;
+  }
+
+  .layout > * {
+    margin-top: 16rem;
+  }
+
+  .layout > *:first-child {
+    margin-top: 0rem;
+  }
+}

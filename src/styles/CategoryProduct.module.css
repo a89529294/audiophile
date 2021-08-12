@@ -37,3 +37,36 @@
   opacity: 0.5;
   text-align: center;
 }
+
+@media (min-width: 76rem) {
+  .root {
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+    column-gap: 12.5rem;
+  }
+
+  .img {
+    height: 56rem;
+  }
+
+  .description-card {
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .description-card > * {
+    text-align: left;
+  }
+
+  .root:nth-child(even) {
+    grid-template-columns: 4fr 6fr;
+  }
+  .root:nth-child(even) > .img {
+    grid-column: 2;
+  }
+
+  .root:nth-child(even) > .description-card {
+    grid-column: 1;
+    grid-row: 1;
+  }
+}

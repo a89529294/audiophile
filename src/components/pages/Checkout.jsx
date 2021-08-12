@@ -4,6 +4,7 @@ import classes from "../../styles/Checkout.module.css";
 
 import BackButton from "../ui/BackButton";
 import { ShoppingCartContext } from "../../contexts/ShoppingCartContext";
+import { MediaQueryContext } from "../../contexts/MediaQueryContext";
 import Button from "../ui/Button";
 import OrderConfirmationModal from "../ui/OrderConfirmationModal";
 
@@ -14,24 +15,23 @@ const InfoBlock = ({ children, title }) => (
   </div>
 );
 
-const Input = ({ name, placeholder, type = "text" }) => (
-  <div className={classes.input}>
+//variant has one option : 'full-width'
+const Input = ({ name, placeholder, type = "text", variant }) => (
+  <div className={`${classes.input} ${classes[variant]}`}>
     <label htmlFor={name}>{name}</label>
     <input type={type} id={name} placeholder={placeholder} />
   </div>
 );
 
 const PaymentMethodInput = ({ paymentTypes }) => (
-  <div>
+  <div className={classes["payment-method-block"]}>
     <p className={classes["payment-method-title"]}>Payment Method</p>
-    <div className={classes["payment-method-body"]}>
-      {paymentTypes.map((type, i) => (
-        <div className={classes["payment-radio-container"]} key={i}>
-          <input type="radio" name="payment" value={type} id={type} />
-          <label htmlFor={type}>{type}</label>
-        </div>
-      ))}
-    </div>
+    {paymentTypes.map((type, i) => (
+      <div className={classes["payment-radio-container"]} key={i}>
+        <input type="radio" name="payment" value={type} id={type} />
+        <label htmlFor={type}>{type}</label>
+      </div>
+    ))}
   </div>
 );
 
@@ -46,8 +46,9 @@ const CostRow = ({ name, cost, variant = "default" }) => (
 function Checkout() {
   const [showOrderConfirmation, setShowOrderConfirmation] =
     React.useState(false);
-  const { products } = useContext(ShoppingCartContext);
+  const { products, dispatch } = useContext(ShoppingCartContext);
   const [totalPrice, setTotalPrice] = React.useState(0);
+  const { screenSize } = useContext(MediaQueryContext);
 
   React.useEffect(() => {
     setTotalPrice(
@@ -59,8 +60,18 @@ function Checkout() {
     <div className={classes.root}>
       <BackButton
         style={{
-          left: "2.4rem",
-          top: "1.6rem",
+          left:
+            screenSize === "desktop"
+              ? "16.5rem"
+              : screenSize === "tablet"
+              ? "4rem"
+              : "2.4rem",
+          top:
+            screenSize === "desktop"
+              ? "8rem"
+              : screenSize === "tablet"
+              ? "4.8rem"
+              : "1.6rem",
           position: "absolute",
         }}
       />
@@ -72,7 +83,11 @@ function Checkout() {
           <Input name="Name" placeholder="1231231234" type="tel" />
         </InfoBlock>
         <InfoBlock title="SHIPPING INFO">
-          <Input name="Your Address" placeholder="1234 Sth Sth Avenue" />
+          <Input
+            name="Your Address"
+            placeholder="1234 Sth Sth Avenue"
+            variant="full-width"
+          />
           <Input name="ZIP Code" placeholder="10001" type="tel" />
           <Input name="City" placeholder="New York" />
           <Input name="Country" placeholder="United States" />

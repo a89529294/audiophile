@@ -8,21 +8,31 @@
   z-index: 1;
   padding-right: 24px;
   padding-left: 24px;
+  display: flex;
+  justify-content: center;
 }
 
-.bg--cart {
+.bg.bg--cart {
   padding-top: 114px;
 }
 
-.bg--orderConfirmation {
+.bg.bg--orderConfirmation {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 /* 9rem === height of the header */
-.bg--mobileMenu {
+.bg.bg--mobileMenu {
   padding-top: 9rem;
   padding-left: 0rem;
   padding-right: 0rem;
+}
+
+@media (min-width: 30rem) {
+  .bg {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    justify-content: flex-end;
+  }
 }

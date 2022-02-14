@@ -4,19 +4,19 @@
     "category": "headphones",
     "images": {
       "desktop": {
-        "xx99 mark II headphones": "../../assets/category-headphones/desktop/image-xx99-mark-two.jpg",
-        "xx99 mark I headphones": "../../assets/category-headphones/desktop/image-xx99-mark-one.jpg",
-        "xx59 headphones": "../../assets/category-headphones/desktop/image-xx59.jpg"
+        "xx99 mark II headphones": "/src/assets/category-headphones/desktop/image-xx99-mark-two.jpg",
+        "xx99 mark I headphones": "/src/assets/category-headphones/desktop/image-xx99-mark-one.jpg",
+        "xx59 headphones": "/src/assets/category-headphones/desktop/image-xx59.jpg"
       },
       "mobile": {
-        "xx99 mark II headphones": "../../assets/category-headphones/mobile/image-xx99-mark-two.jpg",
-        "xx99 mark I headphones": "../../assets/category-headphones/mobile/image-xx99-mark-one.jpg",
-        "xx59 headphones": "../../assets/category-headphones/mobile/image-xx59.jpg"
+        "xx99 mark II headphones": "/src/assets/category-headphones/mobile/image-xx99-mark-two.jpg",
+        "xx99 mark I headphones": "/src/assets/category-headphones/mobile/image-xx99-mark-one.jpg",
+        "xx59 headphones": "/src/assets/category-headphones/mobile/image-xx59.jpg"
       },
       "tablet": {
-        "xx99 mark II headphones": "../../assets/category-headphones/tablet/image-xx99-mark-two.jpg",
-        "xx99 mark I headphones": "../../assets/category-headphones/tablet/image-xx99-mark-one.jpg",
-        "xx59 headphones": "../../assets/category-headphones/tablet/image-xx59.jpg"
+        "xx99 mark II headphones": "/src/assets/category-headphones/tablet/image-xx99-mark-two.jpg",
+        "xx99 mark I headphones": "/src/assets/category-headphones/tablet/image-xx99-mark-one.jpg",
+        "xx59 headphones": "/src/assets/category-headphones/tablet/image-xx59.jpg"
       }
     },
     "products": [
@@ -30,16 +30,16 @@
     "category": "speakers",
     "images": {
       "desktop": {
-        "zx9 speaker": "../../assets/category-speakers/desktop/image-zx9.jpg",
-        "zx7 speaker": "../../assets/category-speakers/desktop/image-zx7.jpg"
+        "zx9 speaker": "/src/assets/category-speakers/desktop/image-zx9.jpg",
+        "zx7 speaker": "/src/assets/category-speakers/desktop/image-zx7.jpg"
       },
       "mobile": {
-        "zx9 speaker": "../../assets/category-speakers/mobile/image-zx9.jpg",
-        "zx7 speaker": "../../assets/category-speakers/mobile/image-zx7.jpg"
+        "zx9 speaker": "/src/assets/category-speakers/mobile/image-zx9.jpg",
+        "zx7 speaker": "/src/assets/category-speakers/mobile/image-zx7.jpg"
       },
       "tablet": {
-        "zx9 speaker": "../../assets/category-speakers/tablet/image-zx9.jpg",
-        "zx7 speaker": "../../assets/category-speakers/tablet/image-zx7.jpg"
+        "zx9 speaker": "/src/assets/category-speakers/tablet/image-zx9.jpg",
+        "zx7 speaker": "/src/assets/category-speakers/tablet/image-zx7.jpg"
       }
     },
     "products": ["zx9 speaker", "zx7 speaker"]
@@ -49,13 +49,13 @@
     "category": "earphones",
     "images": {
       "desktop": {
-        "YX1 Wireless Earphones": "../../assets/category-earphones/desktop/image-yx1-earphones.jpg"
+        "YX1 Wireless Earphones": "/src/assets/category-earphones/desktop/image-yx1-earphones.jpg"
       },
       "mobile": {
-        "YX1 Wireless Earphones": "../../assets/category-earphones/mobile/image-yx1-earphones.jpg"
+        "YX1 Wireless Earphones": "/src/assets/category-earphones/mobile/image-yx1-earphones.jpg"
       },
       "tablet": {
-        "YX1 Wireless Earphones": "../../assets/category-earphones/tablet/image-yx1-earphones.jpg"
+        "YX1 Wireless Earphones": "/src/assets/category-earphones/tablet/image-yx1-earphones.jpg"
       }
     },
     "products": ["YX1 Wireless Earphones"]

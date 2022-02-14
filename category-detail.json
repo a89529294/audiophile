@@ -4,9 +4,9 @@
     "category": "headphones",
     "images": {
       "desktop": {
-        "xx99 mark II headphones": "../../assets/category-headphones/desktop/image-xx99-mark-two.jpg",
-        "xx99 mark I headphones": "../../assets/category-headphones/desktop/image-xx99-mark-one.jpg",
-        "xx59 headphones": "../../assets/category-headphones/desktop/image-xx59.jpg"
+        "xx99 mark II headphones": "/category-headphones/desktop/image-xx99-mark-two.jpg",
+        "xx99 mark I headphones": "/assets/category-headphones/desktop/image-xx99-mark-one.jpg",
+        "xx59 headphones": "/assets/category-headphones/desktop/image-xx59.jpg"
       },
       "mobile": {
         "xx99 mark II headphones": "../../assets/category-headphones/mobile/image-xx99-mark-two.jpg",

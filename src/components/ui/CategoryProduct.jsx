@@ -15,12 +15,11 @@ function CategoryProduct({
 }) {
   const { screenSize } = React.useContext(MediaQueryContext);
 
-  const imgUrl = new URL(imgStr, import.meta.url).href;
-  console.log(import.meta.url);
-  console.log(imgUrl);
+  // const imgUrl = new URL(imgStr, import.meta.url).href;
+
   return (
     <div className={classes.root}>
-      <img src={imgUrl} className={classes.img} />
+      <img src={imgStr} className={classes.img} />
       <div className={classes["description-card"]}>
         {newProduct && <p className={classes.overline}>NEW PRODUCT</p>}
         {screenSize !== "mobile" ? (

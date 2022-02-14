@@ -6,6 +6,8 @@ import bestGear from "../../assets/home/image-best-gear-mobile.jpg";
 import bestGearTablet from "../../assets/home/image-best-gear-tablet.jpg";
 import bestGearDesktop from "../../assets/home/image-best-gear-desktop.jpg";
 
+console.log(bestGearDesktop);
+
 import { MediaQueryContext } from "../../contexts/MediaQueryContext";
 
 function Ad({ style }) {

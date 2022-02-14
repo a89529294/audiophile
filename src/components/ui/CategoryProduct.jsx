@@ -14,7 +14,9 @@ function CategoryProduct({
   newProduct = false,
 }) {
   const { screenSize } = React.useContext(MediaQueryContext);
+  console.log(imgStr);
   const imgUrl = new URL(imgStr, import.meta.url).href;
+  console.log(imgUrl);
   return (
     <div className={classes.root}>
       <img src={imgUrl} className={classes.img} />

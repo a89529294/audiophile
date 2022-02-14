@@ -14,6 +14,7 @@ function CategoryProduct({
   newProduct = false,
 }) {
   const { screenSize } = React.useContext(MediaQueryContext);
+  console.log(imgStr);
   return (
     <div className={classes.root}>
       <img src={imgStr} className={classes.img} />

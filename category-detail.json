@@ -31,7 +31,7 @@
     "images": {
       "desktop": {
         "zx9 speaker": "/src/assets/category-speakers/desktop/image-zx9.jpg",
-        "zx7 speaker": "/src/category-speakers/desktop/image-zx7.jpg"
+        "zx7 speaker": "/src/assets/category-speakers/desktop/image-zx7.jpg"
       },
       "mobile": {
         "zx9 speaker": "/src/assets/category-speakers/mobile/image-zx9.jpg",
